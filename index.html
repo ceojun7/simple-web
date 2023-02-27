@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {margin: 0;} 
+    header, #footer {text-align: center; background-color:bisque; padding: 20px;}
+    main {min-height: 800px; width: 1130px; padding: 30px; margin-right: auto; margin-left: auto;}
+    section h3 {margin: 0; width: 750px; float: left; border: 3px solid}
+    aside h3 {margin: 0; width: 348px ; float: right; border: 3px solid}
+    nav {text-align: center; width: 1130px; padding: 30px 0 0; margin: 0 auto;}
+    nav li {display: inline-block; margin-right:30px; }
+    nav li a {color: black; text-decoration: none; }
+    nav li a:hover {color:aqua; }
+    .slider-wrapper {width: 300px; height:  100px ; border: 1px solid black;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        pager : false, /* 하단 컨트롤바 유무*/
+        controls : false, /* 컨트롤바 유무*/
+        auto : true /* 자동으로 넘어가게 해주는*/
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img src="../img/blog-post-img1.jpg">
+            <img src="../img/blog-post-img2.jpg">
+            <img src="../img/blog-post-img3.jpg">
+            <img src="../img/blog-post-img4.jpg">
+            <img src="../img/blog-post-img5.jpg">
+          </div>
+        </div>
+        <hr>
+        <src="" alt="배너"  width="200"></h1>
+      <nav id="nav">
+        <ul> <!-- num이 key이다 / 데이터(data) : 각 태그에다가 변수 부여할 때 -->
+          <li data-num="1"> <a href="file:///C:/Users/pro_g/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/workspace_ui%20(2)/%EA%B3%BC%EC%A0%9C/index.html" title="홈">홈</a></li>
+          <li data-num="2"> <a href="#" title="게시판">게시판 </a></li>
+        </ul>
+      </nav>
+    </header>
+  <div id="container">
+    <h3 id="section">
+       
+    </h3>
+    <h3 id="aside"> 
+        <label><input id="id" name="userid" placeholder="아이디를 입력하세요" value=""> </label>
+        <input type="password" id="pw" name="password" placeholder="비밀번호를 입력하세요" value=""> <br>
+    </h3>
+  </div>
+  <footer>
+    <p>copyright & copy; all rights reserved.</p>
+  </footer>
+</body>
+</html>
